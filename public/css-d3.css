@@ -203,6 +203,7 @@ section#grid-layout{
     margin-inline: auto;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: 1fr 1fr 1fr ;
+    gap: 10px;
 }
 .item-2{
     grid-column: 2 / 4; grid-row: 1 / 2;
@@ -229,6 +230,7 @@ section#grid-layout{
 
 .item-6 {
     grid-column: 4 / 5; grid-row: 2 / 4;
+    
 }
 
 .item-7{
@@ -241,6 +243,52 @@ section#grid-layout{
     
 }
 
+section#grid-area{
+   
+    height: 100vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+.container1area {
+    width: 50vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+      "area-1 area-1 area-1 area-1 area-1"
+      "area-2 area-3 area-3 area-3 area-4"
+      "area-2 area-3 area-3 area-3 area-4"
+      "area-2 area-3 area-3 area-3 area-4"
+      "area-2 area-3 area-3 area-3 area-4"
+      "area-5 area-5 area-5 area-5 area-4";
+  }
+
+.area-1{
+    grid-area: area-1;
+    border-radius: 1rem;
+}
+.area-2{
+    grid-area: area-2;
+    border-radius: 1rem;
+}
+.area-3{
+    grid-area: area-3;
+    border-radius: 1rem;
+}
+.area-4{
+    grid-area: area-4;
+    border-radius: 1rem;
+}
+.area-5{
+    grid-area: area-5;
+    border-radius: 1rem;
+}
+
+  
 /* GRID ALIGN */
 
 /* GRID TEMPLATING */
